@@ -1,0 +1,170 @@
+@font-face
+{
+	font-family: 'Myriad Pro';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Myriad Pro'), local('Myriad Pro Regular'), url('../fonts/Myriad Pro Regular.woff') format('woff'), url('../fonts/Myriad Pro Regular.ttf') format('truetype');
+}
+*
+{
+	box-sizing: border-box;
+}
+:root
+{
+	font-family: 'Myriad Pro', 'PT Sans', Sans-serif;
+	font-size: 16px;
+}
+body
+{
+	color: #333;
+	height: 2000px;
+}
+p
+{
+	font-size: .775rem;
+}
+#pages
+{
+	margin: 16.6% auto 0;
+	position: relative;
+	width: 605px;
+}
+#first-page,#second-page,#third-page
+{
+	border-color: #000;
+	border-style: solid;
+	border-width: 2px;
+	height: 750px;
+	position: absolute;
+	width: 523px;
+}
+#first-page
+{
+	background-color: #ebebeb;
+	padding: 41px 33px 0;
+	z-index: 3;
+}
+#second-page
+{
+	background-color: #ccc;
+	left: 21px;
+	top: 20px;
+	z-index: 2;
+}
+#third-page
+{
+	background-color: #acacac;
+	left: 40px;
+	top: 39px;
+	z-index: 1;
+}
+.article-heading
+{
+	font-size: 1.375rem;
+	padding-bottom: 14px;
+}
+#mug-photo
+{
+	float: left;
+	padding: 0 21px 17px 1px;
+}
+#first-page article p:first-of-type
+{
+	padding-right: 5px;
+}
+#first-page article p:nth-of-type(2)
+{
+	clear: left;
+	padding: 0 4px 17px;
+}
+#css-card
+{
+	float: right;
+	margin-top: 2px;
+}
+.clearfix
+{
+	overflow: auto;
+}
+.clearfix::after
+{
+	clear: both;
+	content: '';
+	display: table;
+}
+#nulla-heading
+{
+	font-size: 1.125rem;
+	margin: 20px 0 7px;
+}
+#nulla-section svg
+{
+	float: left;
+	margin: 14px 32px 0 0;
+}
+#nulla-section svg:nth-of-type(2n)
+{
+	float: right;
+	margin: 14px 0 0 32px;
+}
+footer p
+{
+	font-size: .563rem;
+	padding-top: 28px;
+	text-align: center;
+}
+#orange-mark,#green-mark,#blue-mark
+{
+	border: 2px solid #000;
+	border-bottom-right-radius: 10px;
+	border-top-right-radius: 10px;
+	position: absolute;
+}
+#orange-mark
+{
+	background-color: #f68e56;
+	height: 31px;
+	right: 0;
+	top: 39px;
+	width: 107px;
+	z-index: 3;
+}
+#green-mark
+{
+	background-color: #39b54a;
+	height: 31px;
+	right: 10px;
+	top: 62px;
+	width: 95px;
+	z-index: 2;
+}
+#blue-mark
+{
+	background-color: #00aeef;
+	height: 31px;
+	right: 20px;
+	top: 86px;
+	width: 95px;
+	z-index: 1;
+}
+#share-this
+{
+	background-color: #fbaf5d;
+	border: 1px solid #362f2d;
+	bottom: 16%;
+	height: 71px;
+	position: fixed;
+	right: 0;
+	text-align: center;
+	width: 89px;
+	z-index: 3;
+}
+#share-this p
+{
+	font: 1rem normal;
+	padding: 10px 0;
+}
+#share-this a
+{
+	text-decoration: none;
+}
