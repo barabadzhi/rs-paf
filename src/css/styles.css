@@ -32,13 +32,10 @@ p {
     clear: both;
 }
 
-.clearfix:before, .clearfix:after {
-    content: ' ';
-    display: table;
-}
-
 .clearfix:after {
     clear: both;
+    content: '';
+    display: block;
 }
 
 .pages {
@@ -153,9 +150,7 @@ p {
 
 .share-this a {
     text-decoration: none;
-}
-
-.share-this img {
+    display: inline-block;
     height: 22px;
     width: 22px;
 }
